@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    
+    .content{
+        align-items: center;
+        display: flex;
+        gap: 10rem;
+        height: 65rem;
+        justify-content: center;
+        position: relative;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .hero-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    position: relative;
+  
+    @media (max-width: 900px) {
+      flex-direction: column-reverse;
+      text-align: center;
+      height: auto;
+      gap: 3rem;
+
+    }
+
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .hero-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    position: relative;
+    
+       
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+  
+
+    img {
+      position: absolute;
+      width: 6rem;
+      height: 6rem;
+      top: 8.7rem;
+      right: 13rem;
+  
+      @media (max-width: 900px) {
+        right: 3rem;
+      }
+  
+      @media (max-width: 500px) {
+        top: 6.4rem;
+        right: 4rem;
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+  
+      @media (max-width: 400px) {
+        right: 3rem;
+      }
+  
+      @media (max-width: 380px) {
+        right: 3rem;
+      }
+  
+      @media (max-width: 375px) {
+        right: 1.7rem;
+      }
+    }
+  
+ 
+
+
+.hero-img {
+	animation: anim 30s infinite;
+	background-image: url(/src/Assets/R.jpg) ;
+    background-position: center center ;
+    background-size: cover ;
+    background-repeat: no-repeat;
+
+	border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
+	border: 3px solid black;
+
+    
+    height: 32rem;
+    width: 32rem;
+    position: relative;
+    transition: all 1s ease-in-out;
+
+    @media  (max-width: 500px){
+        width: 20rem;
+        height: 20rem;
+        
+    }
+
+    
+   
+    
+}
+
+@keyframes anim {
+	0%,
+	100% {
+		border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+		
+	}
+
+	10% {
+		border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+	}
+
+	20% {
+		border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+	}
+
+	30% {
+		border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+		
+	}
+
+	40% {
+		border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+	}
+
+	50% {
+		border-radius: 100%;
+		
+	}
+
+	60% {
+		border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+	}
+
+	70% {
+		border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+		
+	}
+
+	80% {
+		border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+	}
+
+	90% {
+		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+	}
 }
